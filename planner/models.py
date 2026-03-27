@@ -1,3 +1,10 @@
+'''
+Models for the application.
+----------------------------
+    defines what a Task looks like in the database
+
+'''
+
 from django.db import models
 
 class Task(models.Model):

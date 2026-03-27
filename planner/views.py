@@ -1,3 +1,10 @@
+'''
+Views for the application.
+----------------------------
+    defines how the backend should respond to API requests
+'''
+
+
 from rest_framework import viewsets
 from rest_framework.response import Response
 from .models import Task

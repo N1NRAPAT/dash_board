@@ -1,3 +1,10 @@
+'''
+URL Traffic Routing
+-------------------
+
+    Routes traffic for the backend application.
+'''
+
 from django.contrib import admin
 from django.urls import path, include
 
