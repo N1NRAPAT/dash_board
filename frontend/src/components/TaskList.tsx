@@ -7,12 +7,13 @@ interface Props {
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Work:     'bg-blue-100 text-blue-800',
-  Health:   'bg-green-100 text-green-800',
-  Learning: 'bg-purple-100 text-purple-800',
-  Personal: 'bg-orange-100 text-orange-800',
-  Admin:    'bg-yellow-100 text-yellow-800',
-  Other:    'bg-gray-100 text-gray-800',
+  Work:         'bg-blue-100 text-blue-800',
+  Exercise:     'bg-green-100 text-green-800',
+  Learning:     'bg-purple-100 text-purple-800',
+  Personal:     'bg-orange-100 text-orange-800',
+  SelfReflect:  'bg-yellow-100 text-yellow-800',
+  Cooking:      'bg-pink-100 text-pink-800',
+  Other:        'bg-gray-100 text-gray-800',
 }
 
 function TaskList({ tasks, onComplete, onDelete }: Props) {
