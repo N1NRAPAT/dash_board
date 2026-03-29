@@ -36,7 +36,7 @@ function TaskPieChart({ tasks }: Props) {
   }
 
   return (
-    <div className="bg-[#F2EAE0] border border-gray-200 rounded-xl p-4">
+    <div className="bg-[#E8EAE6] border border-gray-200 rounded-xl p-4">
       <h2 className="text-XL font-bold text-gray-700 mb-4">Time breakdown</h2>
       <ResponsiveContainer width="100%" height={260}>
         <PieChart>

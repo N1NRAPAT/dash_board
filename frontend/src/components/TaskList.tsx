@@ -51,6 +51,20 @@ function TaskList({ tasks, onComplete, onDelete }: Props) {
           <span className={`text-xs px-2 py-1 rounded-full font-medium ${CATEGORY_COLORS[task.category] || CATEGORY_COLORS.Other}`}>
             {task.category}
           </span>
+          
+          <div className="flex-1">
+          <p className={`text-sm font-medium ${task.is_completed ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+            {task.name}
+          </p>
+          <p className="text-xs text-gray-400 mt-0.5">
+            {task.start_time.slice(0, 5)} — {task.end_time.slice(0, 5)}
+          </p>
+          {task.note && (
+            <p className="text-xs text-gray-500 mt-1 italic">
+              "{task.note}"
+            </p>
+          )}
+        </div>
 
           <button
             onClick={() => onDelete(task.id!)}

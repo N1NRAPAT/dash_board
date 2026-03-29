@@ -14,6 +14,7 @@ class Task(models.Model):
     start_time   = models.TimeField()
     end_time     = models.TimeField()
     is_completed = models.BooleanField(default=False)
+    note         = models.TextField(blank=True, default='')
     created_at   = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

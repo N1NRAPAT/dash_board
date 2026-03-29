@@ -10,6 +10,7 @@ export interface Task {
   start_time: string
   end_time: string
   is_completed: boolean
+  note : string
 }
 // Get tasks for a specific date
 export const getTasks = async (date: string) => {
